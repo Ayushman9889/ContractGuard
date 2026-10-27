@@ -1,0 +1,21 @@
+MASTER SERVICES AGREEMENT (MSA)
+
+This Master Services Agreement is entered into by and between Enterprise Cloud Corp ("Provider") and Global Logistics Ltd ("Customer").
+
+SECTION 1. SCOPE OF SERVICES
+Provider will perform enterprise software integration and managed database services as specified in Statements of Work ("SOW") executed hereunder from time to time.
+
+SECTION 2. FEES AND PAYMENT TERMS
+Customer shall pay undisputed invoices within thirty (30) days from receipt of a valid itemized invoice. Late payments shall accrue interest at 1.0% per month.
+
+SECTION 3. INTELLECTUAL PROPERTY RIGHTS
+Each party retains exclusive ownership of its pre-existing intellectual property, proprietary tools, and standard software. Customer is granted a non-exclusive, perpetual, worldwide license to use custom deliverables for its internal business operations.
+
+SECTION 4. LIMITATION OF LIABILITY
+Neither party's aggregate liability under this Agreement shall be subject to any monetary cap or threshold. Provider shall remain liable for all lost business revenues and indirect or consequential damages resulting from downtime.
+
+SECTION 5. ATTORNEY FEE SHIFTING
+If Customer prevails in any litigation or arbitration under this Agreement, Vendor shall pay Customer's full attorney fees and forensic costs.
+
+SECTION 6. TERMINATION FOR CAUSE
+Either party may terminate this Agreement upon written notice if the other party fails to cure a material breach within thirty (30) days of receiving written notification specifying such breach.

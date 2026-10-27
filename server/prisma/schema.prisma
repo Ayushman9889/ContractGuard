@@ -1,0 +1,66 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Contract {
+  id               String          @id @default(uuid())
+  fileName         String
+  fileType         String
+  fileSize         Int
+  rawText          String          @db.Text
+  overallRiskScore Float           @default(0.0)
+  highRiskCount    Int             @default(0)
+  medRiskCount     Int             @default(0)
+  lowRiskCount     Int             @default(0)
+  status           String          @default("PENDING") // PENDING, PROCESSING, COMPLETED, FAILED
+  errorMessage     String?
+  totalLatencyMs   Int             @default(0)
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  clauses          Clause[]
+  auditLogs        AuditLog[]
+}
+
+model Clause {
+  id               String       @id @default(uuid())
+  contractId       String
+  contract         Contract     @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  clauseNumber     Int
+  sectionHeader    String?
+  clauseText       String       @db.Text
+  riskCategory     String?      // INDEMNIFICATION, LIABILITY, TERMINATION, CONFIDENTIALITY, IP, OTHER
+  riskLevel        String?      // LOW, MEDIUM, HIGH
+  reason           String?      @db.Text
+  retrievedContext String?      @db.Text // JSON string of top-K rules
+  latencyMs        Int?
+  createdAt        DateTime     @default(now())
+
+  @@index([contractId])
+}
+
+model PlaybookRule {
+  id               String       @id // e.g. H-01, M-08, L-14
+  category         String       // INDEMNIFICATION, LIABILITY, TERMINATION, CONFIDENTIALITY, IP, OTHER
+  riskTier         String       // LOW, MEDIUM, HIGH
+  title            String
+  ruleText         String       @db.Text
+  example          String?      @db.Text
+  createdAt        DateTime     @default(now())
+}
+
+model AuditLog {
+  id               String       @id @default(uuid())
+  contractId       String?
+  contract         Contract?    @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  action           String       // PARSE, SEGMENT, RETRIEVE, INFERENCE, COMPLETE, ERROR
+  details          String?      @db.Text
+  durationMs       Int?
+  timestamp        DateTime     @default(now())
+
+  @@index([contractId])
+}

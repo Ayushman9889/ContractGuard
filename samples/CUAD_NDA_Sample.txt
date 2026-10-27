@@ -1,0 +1,25 @@
+MUTUAL NON-DISCLOSURE AND CONFIDENTIALITY AGREEMENT
+
+This Mutual Non-Disclosure Agreement ("Agreement") is entered into as of October 27, 2026, by and between Alpha Solutions Inc. ("Company") and Beta Corp ("Counterparty").
+
+SECTION 1. DEFINITION OF CONFIDENTIAL INFORMATION
+"Confidential Information" refers to any proprietary information, technical data, trade secrets, software code, customer lists, or financial data disclosed by either party to the other, either directly or indirectly, in writing, orally or by inspection of tangible objects.
+
+SECTION 2. EXCLUSIONS FROM CONFIDENTIALITY
+Confidential Information does not include information that:
+(a) is or becomes publicly known through no breach of this Agreement by the Receiving Party;
+(b) was already in the rightful possession of the Receiving Party prior to disclosure;
+(c) is independently developed by the Receiving Party without reference to or use of the Disclosing Party's Confidential Information; or
+(d) is required to be disclosed by applicable law or court order, provided the Receiving Party gives prompt written notice to allow the Disclosing Party to seek a protective order.
+
+SECTION 3. OBLIGATIONS OF NON-DISCLOSURE
+Recipient shall maintain all disclosed information strictly confidential in perpetuity without time limitation. Recipient shall not disclose, duplicate, or distribute any proprietary materials to any third party without prior written consent.
+
+SECTION 4. INDEMNIFICATION AND LIABILITIES
+Supplier shall indemnify and hold Customer harmless against any and all claims, damages, liabilities, and losses whatsoever without monetary limitation arising out of any breach of confidentiality.
+
+SECTION 5. GOVERNING LAW AND JURISDICTION
+This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, without giving effect to any principles of conflicts of law. The state and federal courts located in Wilmington, Delaware shall have jurisdiction over any dispute.
+
+SECTION 6. TERMINATION
+Either party may terminate this Agreement upon thirty (30) days' advance written notice. Termination shall not affect the survival of confidentiality covenants set forth in Section 3.
